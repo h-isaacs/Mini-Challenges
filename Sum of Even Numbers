@@ -1,0 +1,14 @@
+'''
+Given the length of a list of numbers. Followed by the lists elements separated by a new line.
+Output the sum of all the even numbers in the list.
+'''
+
+n = int(input())
+num = []
+
+for i in range(n) :
+  num.append(int(input()))
+  
+num = list(filter(lambda x : x%2==0, num))
+
+print(sum(num))
