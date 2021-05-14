@@ -1,0 +1,21 @@
+'''
+Given a person's weight (in kg) and their height (in m).
+Output what category the person falls under.
+'''
+
+weight = float(input())
+height = float(input())
+
+bmi = weight / (height**2)
+
+if bmi < 18.55 :
+  print("Underweight")
+  
+elif bmi < 25 :
+  print("Normal")
+  
+elif bmi < 30 :
+  print("Overweight")
+  
+else :
+  print("Obesity")
