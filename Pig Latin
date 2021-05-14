@@ -1,0 +1,11 @@
+'''
+Take a sentence in English and turn it into Pig Latin. 
+To change a word to Pig Latin, the first letter is moved to the end and "ay" is added to the end of the word.
+For example. "road" > "oadray"
+'''
+
+text = input().split()
+
+string = list(map(lambda x : x[1:] + x[0] + "ay", text))
+
+print(" ".join(string))
