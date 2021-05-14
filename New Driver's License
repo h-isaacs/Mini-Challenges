@@ -1,0 +1,13 @@
+'''
+You need to get your new driver's license, you go to the office at the same time as 4 other people. 
+The officers say they will see everyone in alphabetical order and it takes 20 minutes for each person. Given your name, the number of agents and everyone else's name. 
+How long will it take to walk out of the office with a new driver's license? 
+'''
+
+name = input()
+agents = int(input())
+people = (input() + " " + name).split()
+
+people.sort()
+
+print(20 + people.index(name)//agents * 20)
