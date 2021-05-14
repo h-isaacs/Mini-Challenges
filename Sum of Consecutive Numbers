@@ -1,4 +1,6 @@
-#Take a number N as input and output the sum of all numbers from 1 to N (including N)
+'''
+Take a number N as input and output the sum of all numbers from 1 to N (including N).
+'''
 
 n = int(input())
 
