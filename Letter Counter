@@ -1,0 +1,9 @@
+'''
+Given a string as input, output how many times each letter appears in the string.
+Use a dictionary to output the solution.
+'''
+
+text = input()
+dict = {text[i] : text.count(text[i]) for i in range(len(text))}
+
+print(dict)
